@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="DemoArKit" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="welcomeLabel" destination="jtn-1q-dWR" id="cOh-Zb-ipt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAt-MO-FVn">
+                    <rect key="frame" x="157.5" y="303.5" width="60" height="60"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="kay-8B-fTB"/>
+                        <constraint firstAttribute="width" constant="60" id="owY-R5-kuY"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJs-PQ-l0Z">
+                    <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="59p-sM-fpK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArKit Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtn-1q-dWR">
+                    <rect key="frame" x="144" y="624" width="87.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MJs-PQ-l0Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2eD-HY-eW2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jtn-1q-dWR" secondAttribute="bottom" constant="22" id="6pT-6b-PNv"/>
+                <constraint firstAttribute="trailing" secondItem="MJs-PQ-l0Z" secondAttribute="trailing" id="8t6-sC-Ldk"/>
+                <constraint firstItem="zAt-MO-FVn" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="RMa-Vc-SF4"/>
+                <constraint firstAttribute="bottom" secondItem="MJs-PQ-l0Z" secondAttribute="bottom" id="WbR-JA-fem"/>
+                <constraint firstItem="zAt-MO-FVn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YkP-kv-mBZ"/>
+                <constraint firstItem="MJs-PQ-l0Z" firstAttribute="top" secondItem="zAt-MO-FVn" secondAttribute="top" constant="30" id="cAD-BQ-wNV"/>
+                <constraint firstItem="jtn-1q-dWR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="noS-Vq-LjC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>
